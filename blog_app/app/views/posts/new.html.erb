@@ -1,0 +1,14 @@
+
+<h1>Add a new post!</h1>
+
+<form action="/posts" method="post">
+  <input type="text" placeholder="Title" name="post[name]"><br>
+  <input type="text" placeholder="Your Name" name="post[author]"><br>
+  <textarea name="post[content]" placeholder="Tell your story..."></textarea> <br>
+  <p>Add some tags so other users can find your story!</p>
+  <input type="text" name="tag[name]" placeholder="love adorbz"> <br>
+
+  <%= token_tag form_authenticity_token %>
+
+  <button> Post </button>
+</form>
