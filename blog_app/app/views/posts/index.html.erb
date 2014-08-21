@@ -1,9 +1,15 @@
-<header></header>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+</head>
 
-Welcome to COOL NAME BLOG
+<header>
+  <h1>Cool Blog</h1>
+</header>
+
+
 
 <% @posts.each do |post| %>
-<div>
+<div id="postIndex">
   <h2><%= post.name %></h2>
   <p><%= post.author %></p>
   <p><%= post.content %></p>
@@ -11,5 +17,9 @@ Welcome to COOL NAME BLOG
   </div>
  <% end %>
 
- <a href="/posts/new">Add a new post</a>
+
+<div class="links">
+ <a href="/posts/new">Add a new post</a><br>
  <a href="/tags">See what other people are tagging! </a>
+</div>
+

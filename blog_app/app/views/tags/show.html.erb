@@ -1,21 +1,31 @@
+<head>
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+</head>
 
-  <% array = @tag.posts %>
-  <% names = array.map{ |post| post.name } %>
-  <% authors = array.map{ |post| post.author } %>
-  <% content = array.map{ |post| post.content } %>
-  <% i = 0 %>
+<header>
+  <h1>Cool Blog</h1>
+</header>
 
-  <% while i < array.length  do %>
+
   <div id="showTags">
-    <%= names[i] %><br>
-    <%= authors[i]%><br>
-    <%= content[i]%><br>
-  </div>
-    <% i+= 1 %>
-  <% end %>
+    <% array = @tag.posts %>
+    <% names = array.map{ |post| post.name } %>
+    <% authors = array.map{ |post| post.author } %>
+    <% content = array.map{ |post| post.content } %>
+    <% i = 0 %>
 
-<p><%= @tag.posts.count %> posts have been marked with this tag.</p>
+    <% while i < array.length  do %>
+      <h2><%= names[i] %><br></h2>
+      <%= authors[i]%><br>
+      <%= content[i]%><br>
+      <% i+= 1 %>
+    <% end %>
+
+  <p><%= @tag.posts.count %> posts have been marked with this tag.</p>
+</div>
 
 
-<a href="/posts">View all posts</a> <br>
-<a href="/tags">View all tags</a>
+<div class="links">
+  <a href="/posts">View all posts</a> <br>
+  <a href="/tags">View all tags</a>
+</div>

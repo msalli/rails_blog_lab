@@ -1,10 +1,23 @@
+<head>
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+</head>
 
-<h1>Right now people are tagging:</h1>
+<header>
+  <h1>Cool Blog</h1>
+</header>
 
-<% @tags.each do |tag| %>
- <a href="/tags/<%= tag.id %>"><h2><%= tag.name %></h2></a>
-<% end %>
 
-<a href="/posts">View all posts</a> <br>
-<a href="/posts/new">Create a new post</a>
+<div id="tagIndex">
+  <h1>Right now people are tagging:</h1>
+
+  <% @tags.each do |tag| %>
+   <a href="/tags/<%= tag.id %>"><h2><%= tag.name %></h2></a>
+  <% end %>
+
+</div>
+
+<div class="links">
+  <a href="/posts">View all posts</a> <br>
+  <a href="/posts/new">Create a new post</a>
+</div>
 

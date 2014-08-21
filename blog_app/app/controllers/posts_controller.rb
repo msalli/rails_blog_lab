@@ -29,6 +29,8 @@ class PostsController < ApplicationController
     id = params[:id]
     @post = Post.find(id)
     @post.destroy
+
+    redirect_to '/posts'
   end
 
 

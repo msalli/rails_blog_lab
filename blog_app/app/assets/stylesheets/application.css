@@ -1,15 +1,112 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  background-color: #14163B;
+}
+
+header {
+  width: 90%;
+  height: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: #5C5E91;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  padding-left: 30px;
+  color: white
+}
+
+#postIndex {
+  width: 40%;
+  margin-left: 130px;
+  float: left;
+  margin-bottom: 30px;
+  margin-right: 40px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px 10px 10px 10px;
+  font-family: "Helvetica", sans-serif;
+  color: #818291;
+}
+
+#addNew {
+  width: 40%;
+  margin-left: 130px;
+  float: left;
+  margin-bottom: 30px;
+  margin-right: 40px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px 10px 10px 10px;
+  font-family: "Helvetica", sans-serif;
+  color: #818291;
+}
+
+#showPosts {
+  width: 40%;
+  margin-left: 130px;
+  float: left;
+  margin-bottom: 30px;
+  margin-right: 40px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px 10px 10px 10px;
+  font-family: "Helvetica", sans-serif;
+  color: #818291;
+}
+
+#showTags {
+  width: 40%;
+  margin-left: 130px;
+  float: left;
+  margin-bottom: 30px;
+  margin-right: 40px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px 10px 10px;
+  font-family: "Helvetica", sans-serif;
+  color: #818291;
+}
+
+#tagIndex {
+  width: 40%;
+  margin-left: 130px;
+  float: left;
+  margin-bottom: 30px;
+  margin-right: 40px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px 10px 10px;
+  font-family: "Helvetica", sans-serif;
+  color: #818291;
+}
+
+#tagIndex a {
+  color: rgb(129, 130, 145);
+  text-decoration: none;
+}
+
+#tagIndex a:hover {
+  color: rgba(129, 130, 145, .5)
+}
+
+
+
+.links a {
+  font-size: 14px;
+  font-family: "Helvetica", sans-serif;
+  text-decoration: none;
+  color: rgb(129, 130, 145);
+}
+
+.links a:hover {
+  color: rgba(129, 130, 145, .5)
+}
+
