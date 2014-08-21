@@ -1,0 +1,21 @@
+
+  <% array = @tag.posts %>
+  <% names = array.map{ |post| post.name } %>
+  <% authors = array.map{ |post| post.author } %>
+  <% content = array.map{ |post| post.content } %>
+  <% i = 0 %>
+
+  <% while i < array.length  do %>
+  <div id="showTags">
+    <%= names[i] %><br>
+    <%= authors[i]%><br>
+    <%= content[i]%><br>
+  </div>
+    <% i+= 1 %>
+  <% end %>
+
+<p><%= @tag.posts.count %> posts have been marked with this tag.</p>
+
+
+<a href="/posts">View all posts</a> <br>
+<a href="/tags">View all tags</a>

@@ -9,4 +9,10 @@ Rails.application.routes.draw do
   post '/posts', to: 'posts#create'
 
   get '/posts/:id', to: 'posts#show'
+
+  get '/tags', to: 'tags#index'
+
+  get '/tags/:id', to: 'tags#show'
+
+  delete '/posts/:id', to: 'posts#destroy'
 end

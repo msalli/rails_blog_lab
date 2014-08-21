@@ -4,4 +4,17 @@
 <p><%= @post.author %></p>
 <p><%= @post.content %></p>
 
-<p><%= @tag.name %></p>
+<% name = @post.tags.map{ |tag| tag.name} %>
+<% id = @post.tags.map{ |tag| tag.id} %>
+
+<p>Tags on this post: <a href="/tags/<%= id[0] %>"><%= name[0] %></a></p>
+
+<form action="/posts" method="post">
+  <input name="_method" type="hidden" value="delete">
+  <button>Delete</button>
+</form>
+
+
+<a href="/posts">Back to all posts</a><br>
+<a href="/tags">View all tags</a>
+

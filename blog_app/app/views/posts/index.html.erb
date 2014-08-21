@@ -1,3 +1,5 @@
+<header></header>
+
 Welcome to COOL NAME BLOG
 
 <% @posts.each do |post| %>
@@ -8,3 +10,6 @@ Welcome to COOL NAME BLOG
   <a href="/posts/<%= post.id %>">View Full Post</a>
   </div>
  <% end %>
+
+ <a href="/posts/new">Add a new post</a>
+ <a href="/tags">See what other people are tagging! </a>

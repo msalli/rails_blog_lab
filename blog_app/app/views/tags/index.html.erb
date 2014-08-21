@@ -1,0 +1,10 @@
+
+<h1>Right now people are tagging:</h1>
+
+<% @tags.each do |tag| %>
+ <a href="/tags/<%= tag.id %>"><h2><%= tag.name %></h2></a>
+<% end %>
+
+<a href="/posts">View all posts</a> <br>
+<a href="/posts/new">Create a new post</a>
+

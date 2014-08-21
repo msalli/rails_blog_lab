@@ -2,13 +2,16 @@
 <h1>Add a new post!</h1>
 
 <form action="/posts" method="post">
-  <input type="text" placeholder="Title" name="post[name]"><br>
+  <input type="text" placeholder="Title" name="post[name]" autofocus><br>
   <input type="text" placeholder="Your Name" name="post[author]"><br>
-  <textarea name="post[content]" placeholder="Tell your story..."></textarea> <br>
+  <textarea name="post[content]" rows="25" cols="75"placeholder="Tell your story..."></textarea> <br>
   <p>Add some tags so other users can find your story!</p>
-  <input type="text" name="tag[name]" placeholder="love adorbz"> <br>
+  <input type="text" name="tag[name]" placeholder="adorbz"> <br>
 
   <%= token_tag form_authenticity_token %>
 
   <button> Post </button>
 </form>
+
+<a href="/posts">View all posts</a><br>
+<a href="/tags">See popular tags</a>

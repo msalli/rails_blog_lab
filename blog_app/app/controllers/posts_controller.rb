@@ -2,7 +2,6 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
-    @tags = Tag.all
   end
 
   def new
@@ -25,6 +24,13 @@ class PostsController < ApplicationController
     id = params[:id]
     @post = Post.find(id)
   end
+
+  def destroy
+    id = params[:id]
+    @post = Post.find(id)
+    @post.destroy
+  end
+
 
 
 
