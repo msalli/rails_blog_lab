@@ -14,5 +14,5 @@ Rails.application.routes.draw do
 
   get '/tags/:id', to: 'tags#show'
 
-  delete '/posts', to: 'posts#destroy'
+  delete '/posts/:id', to: 'posts#destroy'
 end
